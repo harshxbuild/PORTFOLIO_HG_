@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Harsh Girhe, B.Tech CSE (Cyber Security) student building AURA, an AI-powered cyber security awareness platform.">
+<meta property="og:title" content="Harsh Girhe — Cyber Security Portfolio">
+<meta property="og:description" content="Cyber security student building tools that teach people to spot phishing, weak passwords and social engineering.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d0817">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d0817'/%3E%3Ctext x='50' y='66' font-size='52' font-family='Arial Black' text-anchor='middle' fill='%23ff6a00'%3EHG%3C/text%3E%3C/svg%3E">
+<title>Harsh Girhe — Cyber Security Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0817;--fg:#efeaff;--mut:#9a92b4;--ac:#ff6a00;--ac2:#8a5cff;--card:rgba(24,14,42,.72);--line:rgba(239,234,255,.14);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html.lenis,html.lenis body{height:auto}
+body{background:var(--bg);color:var(--fg);font:17px/1.65 'Instrument Sans',system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:4px}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer{position:relative;z-index:1}
+h1,h2,.dp{font-family:'Syne','Arial Black',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.035em;line-height:.88}
+.ch{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .05em .08em;margin:0 -.05em}.ch i{display:inline-block;font-style:normal}.w{display:inline-block;white-space:nowrap}
+section{padding:clamp(80px,14vh,160px) clamp(20px,5vw,72px)}
+h2{font-size:clamp(44px,9vw,136px);margin-bottom:clamp(32px,6vh,72px)}
+.mut{color:var(--mut)}
+#ld{position:fixed;inset:0;z-index:99;background:#05030a;display:grid;place-items:center;animation:ldx .01s 8s forwards}
+#ld b{font:800 clamp(80px,22vw,260px)/1 'Syne',sans-serif;color:var(--ac)}#ld small{display:block;text-align:center;color:var(--mut);letter-spacing:.2em}
+@keyframes ldx{to{visibility:hidden}}
+#pg{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ac),var(--ac2));transform:scaleX(0);transform-origin:0 50%;z-index:60}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px clamp(20px,5vw,72px);mix-blend-mode:difference;color:#fff;font-weight:600}
+nav div{display:flex;gap:clamp(14px,3vw,36px)}nav a:hover{opacity:.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:49}
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(40px,8vh,90px)}
+.hero h1{font-size:clamp(40px,calc((100vw - 2*clamp(20px,5vw,72px))/5.95),330px)}.hero h1>span:first-child{margin-left:-.062em}
+.hero h1 .l2{display:block;margin-left:-.046em;color:var(--fg);filter:url(#ol)}
+.hero p{max-width:520px;margin-top:28px;font-size:clamp(17px,1.6vw,21px)}
+.hero .row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px}
+.scr{color:var(--mut);display:flex;gap:10px;align-items:center}.scr::after{content:"";width:1px;height:54px;background:var(--ac);animation:sc 1.6s infinite}
+@keyframes sc{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.mq{overflow:hidden;border-block:1px solid var(--line);background:rgba(13,8,23,.8);backdrop-filter:blur(8px);padding:22px 0;white-space:nowrap}
+.mq div{display:inline-block;animation:mq 28s linear infinite;font:800 clamp(28px,5vw,60px) 'Syne',sans-serif;text-transform:uppercase}
+.mq span{color:var(--ac);margin:0 .5em}
+@keyframes mq{to{transform:translateX(-50%)}}
+.ab{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(30px,6vw,90px);align-items:start}
+.ab p{font-size:clamp(20px,2.4vw,32px);line-height:1.35;font-weight:500}
+.st{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.st .card{container-type:inline-size}
+.card{background:var(--card);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:22px;padding:26px;transform-style:preserve-3d}
+.st .card b{display:block;font:800 clamp(24px,5vw,68px)/1 'Syne',sans-serif;font-size:clamp(22px,24cqw,68px);color:var(--ac)}.st .card span{color:var(--mut);font-size:15px}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.sk h3{font:800 26px 'Syne',sans-serif;margin-bottom:16px}
+.sk ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0}.sk li,.chips span{border:1px solid var(--line);border-radius:99px;padding:5px 14px;font-size:14.5px}
+.sk .card:hover{border-color:var(--ac)}
+.pr{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,5vw,70px);align-items:center}
+.pr h3{font:800 clamp(64px,13vw,190px)/.85 'Syne',sans-serif;letter-spacing:-.04em;color:var(--ac)}
+.pr h4{font:600 20px 'Instrument Sans';color:var(--mut);margin:10px 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.chips span{background:rgba(138,92,255,.14);border-color:rgba(138,92,255,.4)}
+.btn{display:inline-block;padding:14px 28px;border-radius:99px;background:var(--ac);color:#140800;font-weight:600;margin:6px 8px 0 0;transition:transform .3s,background .3s}
+.btn.o{background:none;color:var(--fg);border:1px solid var(--line)}.btn:hover{transform:translateY(-4px);background:var(--ac2);color:#fff}
+.dash{display:grid;gap:18px}.dash .top{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.ring{position:relative;width:140px;height:140px;flex:none}.ring svg{transform:rotate(-90deg)}.ring b{position:absolute;inset:0;display:grid;place-items:center;font:800 36px 'Syne'}
+.bar{font-size:14px;color:var(--mut)}.bar div{height:7px;border-radius:9px;background:var(--line);margin-top:5px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--ac2));border-radius:9px}
+.flow{display:flex;gap:10px;flex-wrap:wrap;margin-top:50px}.flow div{flex:1;min-width:170px;padding:18px;border-top:2px solid var(--ac)}.flow b{display:block;font-family:'Syne';font-size:20px}.flow span{color:var(--mut);font-size:15px}
+.hs{overflow:hidden;padding-inline:0}.hs h2{padding-inline:clamp(20px,5vw,72px)}
+.trk{display:flex;gap:28px;padding-inline:clamp(20px,5vw,72px);width:max-content}
+.cc{width:min(560px,78vw);flex:none;display:flex;flex-direction:column}
+.cc .im{aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:#1a1030;display:grid;place-items:center;cursor:zoom-in;border:1px solid var(--line)}
+.cc img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.cc .im:hover img{transform:scale(1.05)}
+.cc h3{font:800 26px/1.1 'Syne',sans-serif;margin:18px 0 6px}.cc p{color:var(--mut);font-size:15.5px;margin-bottom:10px}
+.cc a.v{color:var(--ac);font-weight:600;border-bottom:1px solid}
+.em{text-align:center;padding:20px}.em b{display:block;font:800 clamp(44px,7vw,88px)/1 'Syne',sans-serif;color:#fff}.em span{color:var(--ac);font-weight:600}
+.ach{display:flex;gap:30px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:36px}
+.ach .dp{font-size:clamp(32px,6vw,84px)}
+.ed{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:var(--card);backdrop-filter:blur(14px)}
+.ed>div{padding:clamp(26px,4vw,60px)}.ed>div+div{border-left:1px solid var(--line);background:rgba(138,92,255,.08)}
+.ed .tag{color:var(--ac);font-weight:600}.ed h3{font:800 clamp(28px,3.6vw,50px)/1 'Syne',sans-serif;margin:12px 0 16px}.ed p{color:var(--mut)}.ed ul{padding-left:18px;margin-top:14px}
+.ct{text-align:center}.ct h2{margin-bottom:30px}.ct .em{padding:0}
+.ct .big{display:block;font:800 clamp(22px,4.6vw,64px) 'Syne',sans-serif;border-bottom:2px solid var(--ac);width:max-content;max-width:100%;margin:0 auto 40px;overflow-wrap:anywhere;transition:color .3s}.ct .big:hover{color:var(--ac)}
+footer{padding:30px clamp(20px,5vw,72px);border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--mut);font-size:14px;background:var(--bg)}
+#lb{position:fixed;inset:0;z-index:90;background:rgba(5,3,10,.92);display:none;place-items:center;padding:24px;cursor:zoom-out}#lb.on{display:grid}#lb img{max-width:100%;max-height:100%;border-radius:12px}
+#cur{position:fixed;left:0;top:0;width:26px;height:26px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;z-index:98;display:none;opacity:0;transition:opacity .25s}#cur.on{opacity:1}
+@media(hover:hover) and (pointer:fine){#cur{display:block}body,a,button,.im{cursor:none!important}}
+@media(min-width:861px){.hs{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:clamp(76px,10vh,110px) 0 clamp(24px,4vh,60px);padding:clamp(76px,10svh,110px) 0 clamp(24px,4svh,60px)}.hs h2{font-size:clamp(36px,min(6.4vw,10vh),110px);font-size:clamp(36px,min(6.4vw,10svh),110px);margin-bottom:clamp(16px,3vh,48px)}.cc{width:var(--cw,min(560px,78vw,max(260px,calc((100vh - 440px)*4/3))));width:var(--cw,min(560px,78vw,max(260px,calc((100svh - 440px)*4/3))))}}
+@media(max-width:860px){.ach .dp{font-size:clamp(22px,8vw,48px)}.ab{grid-template-columns:minmax(0,1fr)}.ed{grid-template-columns:1fr}.pr{grid-template-columns:minmax(0,1fr)}.ed>div+div{border-left:0;border-top:1px solid var(--line)}.trk{flex-direction:column;width:auto}.cc{width:100%}nav div a:nth-child(n+4){display:none}}
+@media(prefers-reduced-motion:reduce){.mq div,.scr::after{animation:none}}
+html.nj body,html.nj a,html.nj button,html.nj .im{cursor:auto!important}html.nj #cur{display:none!important}
+.lenis.lenis-stopped{overflow:hidden}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="ol" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="erode" radius="2" result="e"/><feComposite in="SourceAlpha" in2="e" operator="out" result="r"/><feFlood flood-color="#efeaff"/><feComposite in2="r" operator="in"/></filter></svg>
+<div id="ld"><div><b id="pc">0</b><small>Loading portfolio</small></div></div>
+<div id="pg"></div><div id="cur"></div><canvas id="gl"></canvas>
+<nav><a href="#top" class="dp" style="font-size:22px">HG</a><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#creds">Certificates</a><a href="#edu">Education</a><a href="#contact">Contact</a></div></nav>
+<main id="top">
+<section class="hero"><h1><span data-sp>Harsh</span><span class="l2" data-sp>Girhe</span></h1>
+<div class="row"><p class="fade">Cyber security student building tools that teach people to spot phishing, weak passwords and social engineering before it costs them. Python, Flask and a little machine learning.</p><div class="scr fade">Scroll</div></div></section>
+<div class="mq"><div>Cyber security<span>✦</span>Python<span>✦</span>Flask<span>✦</span>AI &amp; ML<span>✦</span>Phishing awareness<span>✦</span>Web development<span>✦</span>Cyber security<span>✦</span>Python<span>✦</span>Flask<span>✦</span>AI &amp; ML<span>✦</span>Phishing awareness<span>✦</span>Web development<span>✦</span></div></div>
+
+<section id="about"><h2 class="h2s">About me</h2><div class="ab">
+<p class="rv">I'm Harsh Netraraj Girhe, a B.Tech Computer Science student specialising in Cyber Security at GH Raisoni College of Engineering, Nagpur. I like turning security ideas into things people can click, play and learn from. My flagship project, AURA, scores how a person handles real-world attacks, then tells them exactly where to improve.</p>
+<div class="st"><div class="card tilt"><b data-n="4">0</b><span>Certificates &amp; credentials</span></div><div class="card tilt"><b data-n="1">0</b><span>Hackathon completed</span></div><div class="card tilt"><b data-n="90" data-s="%">0</b><span>Of AURA's web development built by me</span></div><div class="card tilt"><b data-n="2029">0</b><span>Graduating batch</span></div></div></div></section>
+
+<section id="skills"><h2 class="h2s">What I work with</h2><div class="sk">
+<div class="card tilt"><h3>Languages</h3><ul><li>Python</li><li>C</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></div>
+<div class="card tilt"><h3>Web &amp; backend</h3><ul><li>Flask</li><li>SQLite</li><li>Authentication</li><li>Session management</li><li>Audit logging</li></ul></div>
+<div class="card tilt"><h3>AI &amp; data</h3><ul><li>NumPy</li><li>scikit-learn</li><li>Logistic regression</li><li>Analytics dashboards</li><li>CSV &amp; PDF reports</li></ul></div>
+<div class="card tilt"><h3>Cyber security</h3><ul><li>Phishing</li><li>Password safety</li><li>Social engineering</li><li>Data protection</li><li>Risk scoring</li></ul></div></div></section>
+
+<section id="work"><h2 class="h2s">Selected work</h2><div class="pr">
+<div><h3 data-sp>AURA</h3><h4>Automated User Risk Assessment</h4>
+<p class="rv">An AI-powered cybersecurity awareness platform. Users face interactive scenarios on phishing, password safety, social engineering and data protection. AURA turns their choices into a risk score, gives personalised feedback and shows where their awareness is weakest.</p>
+<div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Flask</span><span>SQLite</span><span>NumPy</span><span>scikit-learn</span></div>
+<a class="btn" href="https://github.com/harshxbuild" target="_blank" rel="noopener">View on GitHub</a><a class="btn o" id="live" href="https://github.com/harshxbuild" target="_blank" rel="noopener">Live demo on Vercel</a></div>
+<div class="card tilt dash"><div class="top"><div class="ring"><svg width="140" height="140"><circle cx="70" cy="70" r="60" fill="none" stroke="rgba(239,234,255,.14)" stroke-width="12"/><circle id="ring" cx="70" cy="70" r="60" fill="none" stroke="#ff6a00" stroke-width="12" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="377"/></svg><b data-n="72">0</b></div><div><b class="dp" style="font-size:26px">Sample risk report</b><div class="mut" style="font-size:14px">Illustrative scores, not real user data</div></div></div>
+<div class="bar">Phishing<div><i style="width:82%"></i></div></div><div class="bar">Password safety<div><i style="width:64%"></i></div></div><div class="bar">Social engineering<div><i style="width:71%"></i></div></div><div class="bar">Data protection<div><i style="width:58%"></i></div></div></div></div>
+<div class="flow"><div><b>Scenarios</b><span>Interactive attack simulations</span></div><div><b>Scoring</b><span>Logistic regression risk model</span></div><div><b>Feedback</b><span>Personalised weak-spot advice</span></div><div><b>Reports</b><span>Dashboards, CSV and PDF export</span></div><div><b>Security</b><span>Auth, sessions, audit logs</span></div></div></section>
+
+<section class="hs" id="creds"><h2 class="h2s">Certificates &amp; credentials</h2><div class="trk">
+<div class="cc"><div class="im"><img loading="lazy" src="assets/ai-fluency-badge.jpg" alt="Claude Academy AI Fluency badge"></div><h3>AI Fluency: Framework and Foundations</h3><p>Anthropic · Claude Academy · Issued 16 October 2026</p><a class="v" href="https://academy.claude.com/verify/ee0d7968cde7b3488cb5ef33f040e4b8" target="_blank" rel="noopener">Verify this badge</a></div>
+<div class="cc"><div class="im"><img loading="lazy" src="assets/oracle-agentic-ai-certificate.jpg" alt="Oracle Certified Foundations Associate certificate for Agentic AI, issued 10 September 2026"></div><h3>Agentic AI Certified Foundations Associate</h3><p>Oracle University · Oracle Certified Foundations Associate · Certificate of Recognition · 10 September 2026</p></div>
+<div class="cc"><div class="im"><img loading="lazy" src="assets/mmgeis-certificate.jpg" alt="MMGEIS certificate of registration"></div><h3>MMGEIS programme</h3><p>Master Mentors Geo-Enabling Indian Scholars · Centre for Knowledge Sovereignty with Esri India · Certificate of Registration</p></div>
+<div class="cc"><div class="im"><img loading="lazy" src="assets/pystorm-hackfest-certificate.jpg" alt="PyStorm HackFest 2026 certificate"></div><h3>PyStorm HackFest 2026</h3><p>Python Hackathon · GH Raisoni College of Engineering, Nagpur · 13–25 April 2026 · Certificate of Participation</p></div>
+</div></section>
+
+<section><div class="ach"><div><p class="mut">Achievement</p><div class="dp rv">Python Hackathon<br>PyStorm HackFest 2026</div></div><p class="mut rv" style="max-width:380px">Competed in a 13-day Python coding competition run by the FAITH forum of the First Year Engineering department, and was recognised for enthusiasm, teamwork and programming skill.</p></div></section>
+
+<section id="edu"><h2 class="h2s">Education</h2><div class="ed">
+<div class="rv"><span class="tag">Now · 2025 to 2029</span><h3>B.Tech in CSE, Cyber Security</h3><p>GH Raisoni College of Engineering, Nagpur</p><ul class="mut"><li>Specialising in cyber security</li><li>Built AURA</li><li>Completed PyStorm HackFest 2026</li></ul></div>
+<div class="rv"><span class="tag">Before · 2023</span><h3>Class 12 (HSC)</h3><p>Arya Junior College</p><ul class="mut"><li>Scored 61%</li><li>Where I started writing code in Python, C, HTML and CSS</li></ul></div></div></section>
+
+<section id="contact" class="ct"><h2 class="h2s">Let's build something secure</h2>
+<a class="big" href="mailto:harshgirhe.dev@gmail.com">harshgirhe.dev@gmail.com</a>
+<a class="btn" href="tel:+917841973569">Call 7841973569</a><a class="btn o" href="https://www.linkedin.com/in/harshgirhe" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://github.com/harshxbuild" target="_blank" rel="noopener">GitHub</a>
+<p class="mut" style="margin-top:36px">Nagpur, Maharashtra, India</p></section></main>
+<footer><span>© 2026 Harsh Netraraj Girhe</span><span>Designed and built by Harsh</span></footer>
+<div id="lb"><img alt=""></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$$('[data-sp],.h2s').forEach(e=>{e.innerHTML=e.textContent.split(' ').map(w=>`<span class="w">${[...w].map(c=>`<span class="ch"><i>${c}</i></span>`).join('')}</span>`).join(' ')});
+/* fit big headings so no word runs off-screen, and size the certificate cards to the screen height */
+const fitH=()=>{$$('.hero h1,h2.h2s,.pr h3').forEach(e=>{e.style.fontSize='';const es=getComputedStyle(e),box=e.closest('.pr>div,section')||e.parentElement,bs=getComputedStyle(box),
+av=box.clientWidth-parseFloat(bs.paddingLeft)-parseFloat(bs.paddingRight)-parseFloat(es.paddingLeft)-parseFloat(es.paddingRight);let m=0;e.querySelectorAll('.w').forEach(w=>{m=Math.max(m,w.offsetWidth)});
+if(m>av&&m>0)e.style.fontSize=(parseFloat(es.fontSize)*av/m*.99)+'px'})};
+const fitC=()=>{const hs=$('.hs');if(!hs)return;hs.style.removeProperty('--cw');if(innerWidth<=860)return;let lo=200,hi=Math.min(560,innerWidth*.78);
+const h2=$('.hs h2'),tk=$('.trk'),need=()=>{const c=getComputedStyle(hs);return parseFloat(c.paddingTop)+parseFloat(c.paddingBottom)+h2.offsetHeight+parseFloat(getComputedStyle(h2).marginBottom)+tk.offsetHeight},ok=w=>{hs.style.setProperty('--cw',w+'px');return need()<=innerHeight};const best=()=>{for(let w=hi;w>=lo;w-=16)if(ok(w))return w;return 0};let f=parseFloat(getComputedStyle(h2).fontSize),w=best();while(!w&&f>30){f*=.92;h2.style.fontSize=f+'px';w=best()}if(!w){let bn=1e9;for(let x=hi;x>=lo;x-=16){ok(x);const n=need();if(n<bn){bn=n;w=x}}}hs.style.setProperty('--cw',w+'px')};
+const fitAll=()=>{fitH();fitC()};fitAll();let fq;addEventListener('resize',()=>{cancelAnimationFrame(fq);fq=requestAnimationFrame(fitAll)});
+/* 3D scene */
+try{const cv=$('#gl'),R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true}),S=new THREE.Scene(),C=new THREE.PerspectiveCamera(50,1,.1,100);C.position.z=6.5;
+R.setPixelRatio(Math.min(devicePixelRatio,2));
+const M=(c,o)=>new THREE.MeshBasicMaterial({color:c,wireframe:true,transparent:true,opacity:o}),G=new THREE.Group();
+const A=new THREE.Mesh(new THREE.IcosahedronGeometry(1.8,1),M(0xff6a00,.5)),B=new THREE.Mesh(new THREE.TorusKnotGeometry(.8,.24,140,16),M(0x8a5cff,.85)),T=new THREE.Mesh(new THREE.TorusGeometry(2.7,.012,8,120),M(0xefeaff,.6));
+G.add(A,B,T);const n=1600,p=new Float32Array(n*3);for(let i=0;i<n;i++){const r=3.5+Math.random()*9,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);p.set([r*Math.sin(b)*Math.cos(a),r*Math.sin(b)*Math.sin(a),r*Math.cos(b)],i*3)}
+const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(p,3));const P=new THREE.Points(g,new THREE.PointsMaterial({size:.035,color:0xefeaff,transparent:true,opacity:.7}));S.add(G,P);
+let mx=0,my=0,sp=0,cp=0;addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+const rs=()=>{R.setSize(innerWidth,innerHeight,false);C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix()};addEventListener('resize',rs);rs();
+const tk=t=>{sp=scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight);cp+=(sp-cp)*.06;const w=innerWidth>860,s=w?1:.62;
+G.scale.setScalar(s*(1+Math.sin(cp*Math.PI*2)*.25));G.position.x=w?Math.sin(cp*Math.PI*3)*2.6:0;G.position.y=Math.cos(cp*Math.PI*2)*.5;
+G.rotation.y=t*.00012+cp*9+mx*.8;G.rotation.x=my*.6+cp*3;B.rotation.x=t*.0004;B.rotation.y=-t*.0003;T.rotation.x=t*.0002+cp*6;A.material.color.setHSL(.07+cp*.65,1,.55);
+P.rotation.y=t*.00003+cp*1.5;C.position.x+=(mx*1.2-C.position.x)*.05;C.lookAt(0,0,0);R.render(S,C);requestAnimationFrame(tk)};requestAnimationFrame(tk)}catch(e){}
+/* motion */
+if(window.gsap&&window.ScrollTrigger){gsap.registerPlugin(ScrollTrigger);
+if(window.Lenis&&!RM){const L=new Lenis({lerp:.085});window.LN=L;L.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>L.raf(t*1000));gsap.ticker.lagSmoothing(0)}
+const ld={v:0};gsap.to(ld,{v:100,duration:RM?.1:1.5,ease:'power2.inOut',onUpdate:()=>$('#pc').textContent=Math.round(ld.v),onComplete:()=>{gsap.to('#ld',{yPercent:-100,duration:.9,ease:'power4.inOut',onComplete:()=>$('#ld').remove()});
+gsap.from('.hero h1 i',{yPercent:115,duration:1.2,stagger:.06,ease:'power4.out',delay:.35});gsap.from('.fade',{y:30,opacity:0,duration:1,stagger:.15,delay:1})}});
+gsap.to('#pg',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.3}});
+$$('.h2s,.pr h3').forEach(e=>gsap.from(e.querySelectorAll('i'),{yPercent:115,rotate:6,duration:1,stagger:.035,ease:'power4.out',scrollTrigger:{trigger:e,start:'top 88%'}}));
+$$('.rv,.tilt,.flow div,.sk .card').forEach(e=>gsap.from(e,{y:60,opacity:0,rotateX:-12,transformPerspective:900,duration:1,ease:'power3.out',scrollTrigger:{trigger:e,start:'top 92%'}}));
+$$('[data-n]').forEach(e=>{const o={v:0},s=e.dataset.s||'';gsap.to(o,{v:+e.dataset.n,duration:1.8,ease:'power2.out',scrollTrigger:{trigger:e,start:'top 92%'},onUpdate:()=>e.textContent=Math.round(o.v)+s})});
+gsap.to('#ring',{strokeDashoffset:377*.28,duration:1.8,ease:'power3.out',scrollTrigger:{trigger:'#ring',start:'top 90%'}});
+$$('.bar i').forEach(b=>gsap.from(b,{width:0,duration:1.4,ease:'power3.out',scrollTrigger:{trigger:b,start:'top 95%'}}));
+gsap.from('.mq',{scaleX:.85,opacity:0,duration:1.2,scrollTrigger:{trigger:'.mq',start:'top 95%'}});
+gsap.matchMedia().add('(min-width:861px)',()=>{const t=$('.trk'),d=()=>Math.max(0,t.scrollWidth-innerWidth);gsap.to(t,{x:()=>-d(),ease:'none',scrollTrigger:{trigger:'.hs',pin:true,scrub:1,start:'top top',end:()=>'+='+(d()>0?d()+300:1),invalidateOnRefresh:true}})});
+ScrollTrigger.sort();ScrollTrigger.addEventListener('refreshInit',fitAll);
+addEventListener('load',()=>ScrollTrigger.refresh());if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{fitAll();ScrollTrigger.refresh()});
+$$('.tilt').forEach(e=>{e.addEventListener('mousemove',v=>{const r=e.getBoundingClientRect();gsap.to(e,{rotateY:((v.clientX-r.left)/r.width-.5)*14,rotateX:-((v.clientY-r.top)/r.height-.5)*14,transformPerspective:900,duration:.4,overwrite:'auto'})});e.addEventListener('mouseleave',()=>gsap.to(e,{rotateX:0,rotateY:0,duration:.7,overwrite:'auto'}))});
+const cu=$('#cur'),qx=gsap.quickTo(cu,'x',{duration:.25}),qy=gsap.quickTo(cu,'y',{duration:.25});addEventListener('mousemove',e=>{cu.classList.add('on');qx(e.clientX-13);qy(e.clientY-13)});
+$$('a,.im,.tilt').forEach(e=>{e.addEventListener('mouseenter',()=>gsap.to(cu,{scale:2.2,duration:.3}));e.addEventListener('mouseleave',()=>gsap.to(cu,{scale:1,duration:.3}))})}
+else{$('#ld')&&$('#ld').remove();document.documentElement.classList.add('nj');document.fonts&&document.fonts.ready.then(fitAll)}
+/* lightbox */
+const lb=$('#lb'),lbo=on=>{lb.classList.toggle('on',on);if(window.LN)on?LN.stop():LN.start()};$$('.im img').forEach(i=>i.addEventListener('click',()=>{const g=lb.querySelector('img');g.src=i.src;g.alt=i.alt;lbo(true)}));lb.onclick=()=>lbo(false);addEventListener('keydown',e=>e.key==='Escape'&&lbo(false));
+</script></body></html>
